@@ -1,0 +1,53 @@
+body {
+  background-color: #7a4444; 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  margin: 0;
+}
+
+header {
+  background-color: #cec8f8; 
+  padding: 10px;
+  display: flex; 
+  justify-content: space-between; 
+}
+
+header div {
+  color: #000000; 
+  font-weight: bold;
+}
+
+.Parents {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 10px; 
+  padding: 20px;
+}
+
+.Text {
+  background-color: #b6b6b6; 
+  color: #000000; 
+  padding: 10px;
+  flex: 1; 
+  min-width: 100px; 
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .Text {
+    flex: 1 0 100%; 
+  }
+}
+
+@media (max-width: 768px) { 
+  .Parents {
+    flex-direction: column; 
+  }
+  .Text {
+    flex: 1 0 50%; 
+    min-width: auto; 
+  }
+}
+
+
